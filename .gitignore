@@ -1,0 +1,8 @@
+# IDE files
+*.classpath
+*.project
+*.settings/
+.DS_Store
+
+# Build files
+target/

@@ -1,0 +1,22 @@
+name: McBan
+version: '${project.version}'
+main: fr.Fozl.McBan
+api-version: 1.18
+authors: [ Fozl ]
+description: Ban plugin
+commands:
+  ban:
+    description: Ban a player
+permissions:
+  mcban.*:
+    description: Gives you all of the McBan permissions.
+    default: false
+    children:
+      mcban.ban: true
+      mcban.view: true
+  mcban.ban:
+    default: op
+    description: Gives you access to the ban command.
+  mcban.view:
+    defaut: op
+    description: Gives you the permission to see the bans in the tchat.
